@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#-----------------------------------------------------
+#Script:
+#
+#Descrição:Verifica o PID da sessão do shell do script
+#
+#Versão	  :0.1
+#Autor    : Hélio Rodrigues
+#Data     : 
+#Licença  : GNU/GPL v3.0
+#-----------------------------------------------------
+#Uso      : echo "Sessão atual: $$" && ./testa_pid
+#-----------------------------------------------------
+
+echo "PID da sessão do shell do script: $$"
+
+exit 0
