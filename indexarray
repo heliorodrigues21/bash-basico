@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#-----------------------------------------------------
+#Script:
+#
+#Descrição:
+#
+#Versão	  :0.1
+#Autor    : Hélio Rodrigues
+#Data     : 
+#Licença  : GNU/GPL v3.0
+#-----------------------------------------------------
+#Uso      :
+#-----------------------------------------------------
+
+# Arrays indexadas...
+
+echo "\
+	Exemplo de trabalho com arrays indexadas...
+"
+
+frutas=("banana" "laranja" "abacate" "limão" "cereja" "abacaxi")
+cores=("amarela" "amarela" "verde" "verde" "vermelha" "amarela")
+
+read -p "Digite um número entre 0 e 5: " numero
+
+[[ ! $numero =~ ^[0-5]$ ]] && echo -e "\nTem que ser um número entre 0 e 5! Saindo...\n" && exit 1
+
+echo "
+Você escolheu ${frutas[$numero]}, que é uma fruta ${cores[$numero]}.
+"
+
+exit 0
